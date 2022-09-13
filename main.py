@@ -1,13 +1,7 @@
-class border:
-  def __init__(self,home,school):
-    self._home = home
-    self._school = school
+@app.route('/')
+def index():
+  return '<h1>Hello World</h1>'
 
-  def sch(self):
-    return self._school
-  
-  def hom(self):
-    return self._home
-  
-
-ample = border('Ramseyer','KNUST')
+@app.route('/register')
+def regis():
+  return '<h2>this good morning</h2>'
